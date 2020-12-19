@@ -200,7 +200,6 @@ namespace Exe {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 21);
 			this->textBox1->TabIndex = 15;
-			this->textBox1->Text = L"200";
 			// 
 			// textBox2
 			// 
@@ -294,7 +293,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 }
 	   void DrawQueue()
 	   {
-		   int start = 360 * queue->GetNumberHead() / queue->GetMaxSize();
+		   int start = 1 * queue->GetNumberHead() / queue->GetMaxSize();
 		   int finish = 360 * queue->GetDataCount() / queue->GetMaxSize();
 		   gr->DrawArc(BlackPen, CenterX, CenterY, Width, Height, start, finish);
 	   }
